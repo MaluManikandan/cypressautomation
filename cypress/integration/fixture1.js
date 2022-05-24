@@ -20,6 +20,8 @@ describe('webpage', function(){
         cy.get(':nth-child(2) > .nav-link').click()
         cy.selectproduct('Blackberry')
         cy.selectproduct('Nokia Edge')
+        
+
 
              
     })
