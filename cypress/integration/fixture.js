@@ -25,6 +25,10 @@ describe('webpage', function(){
             cy.selectproduct(element)
 
         })
+        cy.get('#navbarResponsive > .navbar-nav > .nav-item > .nav-link').click()
+        cy.get(':nth-child(4) > :nth-child(5) > .btn').click()
+        cy.get('#country').type('India')
+        cy.get('.suggestions > ul > li > a').click()
            
 
         
