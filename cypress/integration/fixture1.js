@@ -18,16 +18,8 @@ describe('webpage', function(){
         cy.get('#inlineRadio3').should('be.disabled')
         //customizing cypress commands for reusing the code
         cy.get(':nth-child(2) > .nav-link').click()
-        
-        //parameterizing the test data with json commands
-        
-        this.data.productname.forEach(function(element){
-            cy.selectproduct(element)
-
-        })
-           
-
-        
+        cy.selectproduct('Blackberry')
+        cy.selectproduct('Nokia Edge')
 
              
     })
