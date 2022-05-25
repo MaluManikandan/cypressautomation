@@ -29,6 +29,13 @@ describe('webpage', function(){
         cy.get(':nth-child(4) > :nth-child(5) > .btn').click()
         cy.get('#country').type('India')
         cy.get('.suggestions > ul > li > a').click()
+        cy.get('#checkbox2').click({force:true})
+        cy.get('input[type=submit]').click()
+       // cy.get('.alert').then(function(element){
+        //   const actualText = element.text()
+        //    expect(actualText.includes('Success')).to.be.true
+      //  })
+      // cy.get('.alert alert-success alert-dismissible').should('have.text','Success! Thank you! Your order will be delivered in next few weeks :-).')
            
 
         
